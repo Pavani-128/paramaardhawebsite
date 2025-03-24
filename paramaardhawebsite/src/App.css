@@ -1,0 +1,4 @@
+@font-face {
+  font-family: 'CanvaSans'; /* Or whatever you name the font */
+  src: url('/fonts/CanvaSans-Regular.otf') format('opentype'); /* Path to your font file */
+}

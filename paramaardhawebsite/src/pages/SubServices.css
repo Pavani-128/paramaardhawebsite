@@ -1,0 +1,25 @@
+.subservices-container {
+    padding: 20px;
+}
+
+.subservices-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.subservice-card {
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.subservice-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}

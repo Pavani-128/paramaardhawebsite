@@ -1,0 +1,372 @@
+.service-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffbd59;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+}
+.service-container h1{
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 6px;
+  color: #b54500;
+  text-align: left;
+}
+.service-card {
+  position: relative;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  gap: 20px;
+  margin: 0 10px;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.service-title {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 250px;
+  height: 60px;
+  background: #5a2b25;
+  color: white;
+  padding: 10px 0;
+  
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+.service-title h5{
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: start;
+  transition: transform 0.3s ease-in-out;
+}
+.service-card:hover .service-title h5 {
+  transform: scale(1); /* Zoom-in effect */
+}
+
+.service-card:not(:hover) .service-title h5 {
+  transform: scale(.8); /* Zoom-out effect */
+}
+
+.slick-prev, .slick-next {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #000;
+  font-size: 24px;
+}
+
+.slick-dots li button:before {
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffbd59;
+}
+.service{
+  background:  #fff5e2;
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.sider-img1{
+  position: absolute;
+  top: 400px;
+  left: -250px;
+  width: 500px;
+  
+}
+.sider-img2{
+  position: absolute;
+  top: 430px;
+  right: -250px;
+  width: 500px;
+  /* Prevents it from overflowing */
+  overflow: hidden;
+ 
+}
+@keyframes rotateImage2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.sider-img2 {
+  animation: rotateImage2 20s infinite ease-in-out;
+}
+.sider-img1{
+  animation: rotateImage 20s infinite ease-in-out;
+}
+
+.booking-flow{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+.booking-flow h2{
+  color: #253d38;
+}
+.booking-flow p{
+  font-size: 16px;
+  font-weight: 500;
+  color: #990000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 50px 0;
+}
+.devoties h2{
+  color: #253d38;
+}
+.devoties p{
+  font-size: 16px;
+  font-weight: 500;
+  color:  #990000;
+}
+.devoties .btn{
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  background: #ffde59;
+  border-radius: 20px;
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.btn:hover{
+  background: #ff914d;
+}
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Space between circles */
+  padding: 20px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stat-circle {
+  width: 80px;
+  height: 80px;
+  background: #ffbd59;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9b0d0d;
+}
+
+.stat-label {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #253d38;
+}
+
+.join-community {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #8b0000; /* Dark red background */
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+  z-index: 100px;
+  margin-top: 100px;
+}
+
+.community-text {
+  flex: 1;
+  padding: 20px 30px;
+  color: white;
+}
+
+.community-text h2 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.community-text p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.signup-btn {
+  background: #ff914d;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.signup-btn:hover {
+  background: #ff7523;
+}
+
+.community-image {
+  flex: 1;
+}
+
+.community-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pandit-network {
+  display: flex;
+  justify-content: flex-end; /* Align text to the right */
+  align-items: center;
+  background: #ffbd59; /* Matching background color */
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 86%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.pandit-content {
+  text-align: right; /* Align text content */
+  color: white;
+  max-width: 50%;
+}
+
+.pandit-content h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.pandit-content p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.member-btn {
+  background: #253d38;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.member-btn:hover {
+  background: #1a2a26;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .steps-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.step-box {
+  position: relative;
+  background-color: #ffde59;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.step-number {
+  position: absolute;
+  top: -40px;
+  left: 20px;
+  background-color: #ffbd59;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #990000;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "League Spartan", sans-serif;
+}
+.step-heading{
+  margin-top: 50px;
+  color: #253d38;
+  
+}
+.step-box p{
+  text-align: left;
+
+}
+.step-text {
+  margin-top: 30px;
+  color: #990000;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+
+}

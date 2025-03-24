@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+.hero {
+    background: url('../../assets/Home/Home_bg.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-top: -100px;
+  }
+  
+  .hero-buttons .btn {
+    padding: 10px 30px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn.primary { 
+    background:  #ffde59;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 20px;
+   }
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -300px;
+  margin-top: -160px;
+}
+.hero-content h1{
+  color: #ffde59;
+  margin-bottom: 10px;
+  font-family: "ABeeZee", sans-serif ;
+}
+.hero-content p{
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+span{
+  font-size: 20px;
+  font-weight: 600;  
+}
+  
+  
